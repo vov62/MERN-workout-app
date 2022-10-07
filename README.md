@@ -1,5 +1,5 @@
 # MERN-workout-tracker-app
-Fullstack project, E2E app built with React, Bootstraps, Node.js, MongoDB, JWT.
+Fullstack project, E2E app built with React, Bootstraps, Node.js, MongoDB, JWT. <br>
 This app allows users to register and track their gym workouts.
 
 Live Demo - https://vov-workout-app.herokuapp.com/login

@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import { Container } from '@mui/system';
 import { Link } from 'react-router-dom';
 import { useLogin } from '../Hooks/useLogin';
-import visibilityIcon from '../assets/svg/visibilityIcon.svg';
 
 
 const CustLabel = styled(FormLabel)`
@@ -36,18 +35,6 @@ const H1 = styled('h1')`
 color:#fff;
 font-weight: 300;
 `
-
-const VisibleDiv = styled('div')`
-position: relative;
-`
-
-const ShowPasswordImg = styled('img')`
-  cursor: pointer;
-  position: absolute;
-  top: -4%;
-  right: 1.5%;
-  padding-top: 18px;
-  `
 const CustLink = styled(Link)`
 text-decoration: none;
 color: #ddd;
@@ -55,7 +42,6 @@ color: #ddd;
     border-bottom: 1px solid #ddd;
 }
   `
-
 
 const Login = () => {
 
@@ -108,19 +94,11 @@ const Login = () => {
 
                         <CustLabel>Password:</CustLabel>
 
-                        <VisibleDiv>
-                            <InputCustom
-                                type={showPassword ? 'text' : 'password'}
-                                onChange={(e) => setPassword(e.target.value)}
-                                value={password}
-                            />
-
-                            <ShowPasswordImg className='showPassword'
-                                src={visibilityIcon}
-                                alt="show password"
-                                onClick={() => setShowPassword((prevState) => !prevState)}
-                            />
-                        </VisibleDiv>
+                        <InputCustom
+                            type={showPassword ? 'text' : 'password'}
+                            onChange={(e) => setPassword(e.target.value)}
+                            value={password}
+                        />
 
                         <Button
                             variant="contained"

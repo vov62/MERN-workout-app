@@ -83,6 +83,7 @@ const WorkoutForm = ({ url }) => {
             setTitle('')
             setLoad('')
             setReps('')
+            setError('')
             console.log('new workout added');
         } catch (err) {
             // console.log(err);

@@ -122,13 +122,11 @@ const FormDialog = ({ url }) => {
             )
             const json = await res.data
             dispatch({ type: 'CREATE_WORKOUT', payload: json })
-            // console.log(response);
             setTitle('')
             setLoad('')
             setReps('')
-            console.log('new workout added');
+            setError('')
         } catch (err) {
-            // console.log(err);
             setError(`error: ${err.response.data.err}`)
         }
     }

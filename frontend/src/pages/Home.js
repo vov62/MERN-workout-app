@@ -48,7 +48,6 @@ const Home = () => {
             fetchData()
         }
 
-
     }, [dispatch, user]);
 
 
@@ -89,13 +88,13 @@ const Home = () => {
 
                 <WorkoutForm url={url} setIsLoading={setIsLoading} isLoading={isLoading} />
 
-
                 <Grid sx={{ gridRowStart: '1', gridColumn: 'span 2' }}  >
                     <Item rowGap={1}>
                         {workouts && workouts.map((workout) => (
                             <WorkoutTemplate key={workout._id} workout={workout} url={url} />
                         ))}
                     </Item>
+
                 </Grid>
             </Grid>
         </ Container >

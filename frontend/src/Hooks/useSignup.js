@@ -30,6 +30,7 @@ export const useSignup = () => {
             // update the auth context with user email and token
             dispatch({ type: 'LOGIN', payload: res.data })
 
+
             // save the user email and token to local storage
             localStorage.setItem('user', JSON.stringify(res.data))
 

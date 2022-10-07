@@ -78,8 +78,7 @@ const WorkoutTemplate = ({ workout, url }) => {
                 </CardContent>
             </ Card >
 
-
-
+            {/* mobile cards */}
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
